@@ -1,0 +1,254 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    margin-top: 120px;
+}
+
+/* Contenido header */
+
+.contenido-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6533d1;
+    box-shadow: 0px 2px 5px rgba(118, 61, 225, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px;
+    
+}
+
+nav li a{
+    color:white;
+    font-family: 'Lora';
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav li a:hover{
+    color: #ff8000;
+    text-decoration: dotted;
+    text-shadow: 4px 4px 6px red;
+    font-family: 'PT Sans Narrow';
+}
+
+
+.logo{
+    padding: 0 15px;
+}
+.logo img{
+    width: 95px;
+    height: auto;
+}
+
+.navigation a:hover {
+    text-decoration: underline; 
+}
+
+/* body */
+
+.contenido-01{
+    height: 700px; 
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; 
+}
+
+.contenido-principal{
+    position: relative;
+    text-align: center;
+    z-index: 1; 
+}
+
+.contenido-02{
+    background-color: rgb(151, 141, 141);
+    height: 85px;
+    text-align: center;
+}
+
+.contenido-02 h2{
+    text-align: center; 
+}
+
+h1{
+    font-size: 38px;
+    padding-bottom: 30px;
+}
+
+.boton-pagina{
+    background-color: rgb(80, 80, 215);
+    font-size: 18px;     
+    padding: 15px 30px; 
+    width: 200px;          
+    height: 60px;           
+    color: white;                    
+    border-radius: 20x 1px solid black;    
+    cursor: pointer; 
+    text-align: center;
+}
+
+.boton-pagina:hover {
+    background-color: #45a049; 
+}
+
+.boton-pagina a{
+    text-decoration: none;
+}
+
+/* formulario */ 
+
+.contenido-03 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    width: auto; 
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.imagen-formulario img {
+    width: 100%; 
+    height: 350px;
+    border-radius: 8px;
+}
+  
+.formulario-completo form {
+    display: flex;
+    flex-direction: column;
+ }
+  
+.formulario-completo label {
+    margin-top: 10px;
+}
+  
+.formulario-completo input,
+.formulario-completo textarea {
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+.formulario-completo button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.formulario-completo button:hover {
+    background-color: #45a049;
+}
+
+/* MAPA */
+
+iframe{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* GALERIA */ 
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 14px;
+    width: 97.5%;
+    padding: 20px;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+.item:hover img {
+    transform: scale(1.1);
+  }
+
+.texto-galeria {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Contenido footer */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  .redes-sociales {
+    display: flex;
+    gap: 10px;
+  }
+
+
